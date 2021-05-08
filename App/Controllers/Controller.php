@@ -24,7 +24,7 @@ abstract class Controller
 
     public function render($view)
     {
-        $viewVar = $this->getViewVar;
+        $viewVar = $this->getViewVar();
         $Sessao = Sessao::class;
 
         require_once PATH . '/App/Views/layout/header.php';

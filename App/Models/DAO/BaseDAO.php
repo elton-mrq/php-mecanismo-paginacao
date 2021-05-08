@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\DAO;
+
 use App\Lib\Conexao;
 use Exception;
 use PDOException;
@@ -34,7 +35,7 @@ abstract class BaseDAO
         $limit = strlen($limit) ? " LIMIT " . $limit : "";
 
         $query = "SELECT {$fields} FROM {$this->table} {$where} {$order} {$limit}";
-
+        //echo $query; exit;
         return $this->execute($query);
     }
 }

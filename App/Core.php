@@ -54,7 +54,7 @@ class Core
             unset($path[0]);
             unset($path[1]);
             $this->params = array_values($path);
-            var_dump($this->params);
+            
         }
 
     }
